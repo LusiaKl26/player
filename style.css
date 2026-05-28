@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Nunito', sans-serif;
+}
+
+
+.player {
+  width: 320px;
+  background: #fef6ff;
+  border: 3px solid #c8b4f0;
+  box-shadow: 6px 6px 0px #a890d8;
+}
+
+
+.player-header {
+  background: #c8b4f0;
+  padding: 6px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-app-region: drag;
+}
+
+.player-header span {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 8px;
+  color: #5a3e9b;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.header-buttons button {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #a78bdc;
+  background: #f8c8d4;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  color: #9b6b6b;
+  -webkit-app-region: no-drag;
+}
+
+
+.album-art {
+  width: 100%;
+  height: 240px;
+  background-image: url('background.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a080cc;
+  font-size: 12px;
+}
+
+
+.track-info {
+  padding: 12px 16px 8px;
+  background: #fff0fd;
+  border-top: 2px solid #e4c8f8;
+}
+
+.track-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9px;
+  color: #6a3ba8;
+  margin-bottom: 4px;
+}
+
+.track-artist {
+  font-size: 12px;
+  color: #b090d8;
+  font-weight: 700;
+}
+
+/* === PASEK POSTĘPU === */
+.progress-area {
+  padding: 10px 16px 6px;
+  background: #fff0fd;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e4c8f8;
+  border: 2px solid #c8a8e8;
+  cursor: pointer;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: #a87ad8;
+  transition: width 0.1s linear;
+}
+
+.time-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 7px;
+  color: #b090d8;
+  margin-top: 4px;
+}
+
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: #fff0fd;
+  border-top: 2px solid #e4c8f8;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.controls button img {
+  width: 32px;
+  height: 32px;
+  image-rendering: pixelated;
+}
+
+.btn-play img {
+  width: 42px;
+  height: 42px;
+}
+
+.controls button:hover {
+  opacity: 0.8;
+}
+
+.controls button:active {
+  transform: scale(0.9);
+}

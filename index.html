@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Pixel Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="player">
+
+    <div class="player-header">
+      <span>♪ </span>
+      <div class="header-buttons">
+        <button id="minimize-btn">_</button>
+        <button id="close-btn">x</button>
+      </div>
+    </div>
+
+    <div class="album-art"></div>
+
+   
+    <div class="track-info">
+      <h2 class="track-title">Dreamy Skies</h2>
+      <p class="track-artist">Pastel Clouds</p>
+    </div>
+
+    
+    <div class="progress-area">
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <div class="time-row">
+        <span id="current-time">0:00</span>
+        <span id="total-time">3:24</span>
+      </div>
+    </div>
+
+   
+    <div class="controls">
+      <button class="btn-prev">
+        <img src="btn-prev.png" alt="poprzedni">
+      </button>
+      <button class="btn-play">
+        <img src="btn-play.png" alt="play" id="play-icon">
+      </button>
+      <button class="btn-next">
+        <img src="btn-next.png" alt="następny">
+      </button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
